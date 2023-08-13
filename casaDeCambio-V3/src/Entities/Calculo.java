@@ -14,6 +14,7 @@ public class Calculo {
 	public void comprarMoeda(int escolhaDeCompra,Scanner sc) {
 		switch (escolhaDeCompra) {
 		case '1':
+			System.out.println("Voce escolheu comprar dolar");
 			informarQuantidade(sc);
 			//Imprimo uma mensagem do valor a ser pago e executa o metodo corespondete da (escolhaDeCompra) dolar.
 			System.out.printf("O valor a ser pago é de R$: %.2f%n", comprarDolar(quantidade));
@@ -21,6 +22,7 @@ public class Calculo {
 			System.out.println("==================================\n");
 			break;
 		case '2':
+			System.out.println("Voce escolheu comprar euro");
 			informarQuantidade(sc);
 			//Imprimo uma mensagem do valor a ser pago e executa o metodo corespondete da (escolhaDeCompra) euro.
 			System.out.printf("O valor a ser pago é de R$: %.2f%n", comprarEuro(quantidade)); 
@@ -28,6 +30,7 @@ public class Calculo {
 			System.out.println("==================================\n");
 			break;
 		case '3':			
+			System.out.println("Voce escolheu comprar yuan");
 			informarQuantidade(sc);
 			//Imprimo uma mensagem do valor a ser pago e executa o metodo corespondete da (escolhaDeCompra) yuan.
 			System.out.printf("O valor a ser pago é de R$: %.2f%n", comprarYuan(quantidade)); 
@@ -67,7 +70,7 @@ public class Calculo {
 		System.out.println("Oque deseja fazer?");
 		System.out.println("Comprar dolar - 1, Comprar Euro - 2, Comprar Yuan - 3, Sair - 4");
 		//Lê o primeiro caractere da entrada do usuário como escolha e atribui à variável escolhaDeOpcao e retorna o caractere escolhido.
-		escolhaDeOpcao  = sc.next().charAt(0);		
+		escolhaDeOpcao = sc.next().charAt(0);
 	}
 	
 		
